@@ -1,0 +1,414 @@
+/* Všeobecné */
+*{
+	margin:0;
+	padding: 0;
+} 
+.left {
+	float: left;
+}
+.clr {
+	clear: both;
+}
+body {
+	background: url('../images/pozadi.png') no-repeat top center #fff;
+	font-size: 15px;
+	font-family:  tahoma, verdana, arial, helvetica, sans-serif;
+	text-align: justify;
+}
+.box {
+	margin: 0 auto;
+	width: 960px;
+	background: url('../images/pozadi_bile.png') no-repeat;
+}
+
+
+/* Hlavička */
+.main {
+	margin: 0 auto;
+	width: 890px;
+}
+.main-header {
+	width: 890px;
+	height: 240px;
+}
+.main-header--obr {
+	display: block;
+	width: 890px;
+	height: 240px;
+	background: url('../images/hlavicka.png') no-repeat;
+}
+.main-header--logo {
+position: absolute;
+width: 290px;
+height: 100px;
+background: url('../images/logo.png') no-repeat;
+}
+
+
+/* Menu */
+
+.main-nav {
+	width: 890px;
+	height: 40px;
+	background-color: #f39200;
+	border-bottom: solid 5px #8b8686;
+	position: relative;
+	z-index: 1;
+}
+
+.main-nav--menu {
+	list-style-type: none; 
+	display:block; 
+}
+	
+.menu ul {
+	margin-top: 0px; 
+	position: absolute; 
+	visibility: hidden; 
+	background-color: #A72135; 
+	margin: 0; 
+	padding: 0; 
+	list-style-type: none;
+}
+.menu li {
+	float: left; 
+	width: 148px; 
+	white-space: nowrap;
+}
+.menu a {
+	padding: 10px; 
+	text-align: center; 
+	color: #fff; 
+	background-color: #f39200; 
+	display: block; 
+	text-decoration: none; 
+	font-weight: bold; 
+	text-transform: uppercase; 
+	font-size: 16px;
+}
+.menu a:hover {
+	color: white; 
+	background-color: #8b8686;
+}
+.menu ul a:link {
+	color: #fff; 
+	border-bottom: none;
+}
+.menu ul a:visited {
+	color: #fff; 
+	border-bottom: none;
+}
+.menu ul a:hover {
+	color: white; 
+	background-color: #8b8686;
+	
+	/*font-size: 16px;
+	text-transform: none;*/ zmenší písmo v submenu po najetí
+}
+.menu li:hover ul, ul.menu li.hover ul { 
+	visibility: visible;
+}
+.menu li li {
+	float: none; border: none; padding: 0; margin: 0;
+}
+
+/* Textové pole */
+.main-section {
+	margin: 0 auto;
+	width: 890px;
+}
+
+/* Levý sloupec */
+.main-section--levy {
+	position:relative;
+	float:left;
+	padding: 25px 20px 20px 20px;
+}
+
+/* Pravý sloupec */
+.main-section--pravy {
+	padding: 20px;
+	margin-left: auto;
+	width: 620px;
+}
+
+
+/* Blok akce*/
+.blokakce{ 
+	display:block;
+	width:200px;
+		
+}
+.bloknadpis{
+	padding: 8px; 
+	text-align: left; 
+	padding-left: 40px; 
+	color: white; 
+	background-color: #8b8686; 
+	display: block; 
+	text-decoration: none; 
+	font-weight: bold; 
+	text-transform: uppercase; 
+	font-size: 16px;
+	border-left: 5px solid #f39200;
+	}
+
+.bloktext {
+	margin-top: 10px;
+	margin-left: 25px;
+	list-style-type: square;	
+}
+
+/* Blok stahování*/
+.blokstahovani{
+	width:200px;	
+	margin-top: 50px;	
+}
+
+
+/* O nás*/
+.nadpis {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 22px;
+}
+.odstavec{
+	margin-top: 15px;
+}
+
+/* Servis */
+.odrazky { 	
+	margin-left: 25px;
+	list-style-type: square;	
+}
+.odkaz {
+	color:#000000;
+}
+
+/* Půjčovna */
+
+.tableft{
+	text-align: left;
+	width:70%;
+}
+
+.tabright{
+	text-align: right;	
+}
+
+.tabulka {
+	width: 550px;
+	border-right: 1px solid #8b8686;
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+.tabulka thead th, .tabulka thead td {
+	color: white;
+	background-color: #f39200;
+	border-bottom: 1px solid #8b8686;
+	font-weight: bold;
+	padding: 7px 15px 7px 15px;
+	text-transform: uppercase;
+}
+
+.tabulka tbody td {
+	padding: 7px 15px 7px 15px;
+	border-top: 1px solid #8b8686; 
+	border-bottom: 1px solid #8b8686;
+	border-left: 1px solid #8b8686;
+}
+
+.tabulka tfoot td {
+	color: white;
+	background-color: #8b8686;
+	border-bottom: 1px solid #8b8686;
+	font-weight: bold;
+	padding: 7px 15px 7px 15px;
+}
+
+/* Bazar */
+
+.bazar {
+	position: relative;
+	float: right;
+}
+
+.polozka {
+	border:solid 2px #8b8686;
+	position: relative;
+	width: 260px;
+	height: 360px;
+	float: left;
+	margin: 18px;
+}
+
+.polozka-nazev {
+	color: white;
+	font-size: 18px;
+	float: left;
+	background-color: #f39200;
+	width: 260px;
+	height: 36px;
+	text-align: center;
+	padding-top: 15px;
+	margin-bottom: 15px;
+}
+
+.polozka-obrazek{
+width: 210px;
+height: 155px;
+border: solid 1px #8b8686;
+}
+
+.polozka-popis{
+	margin: 5px 0px 0px 43px;
+	font-weight: bold;
+	list-style-type: square;
+	font-size: 14px;
+}
+
+/* Více informací*/
+
+.vice {
+}
+
+.vice a:link {
+font-family: Verdana;
+text-decoration: none;
+font-weight:bold;
+}
+
+.vice a {
+    margin: 10px 0px 0px 75px;
+    color: #ffffff;
+    background: #f39200 left top repeat-x;
+    padding: 10px 10px;
+    font-size: 12px;
+    line-height: 12px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.vice a:hover {
+    color: #FFF;
+	background: #8b8686 
+}  
+
+/* Footer */
+.footer{
+	width: 890px;
+	background: #8b8686;
+	margin:0 auto;
+	padding: 1px;
+}
+
+.paticka{
+	text-align: center;
+	color:#ffffff;
+	margin: 10px;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+/* Sortiment */
+.blok_katalog{
+	position: relative;
+	padding: 20px;
+
+}
+.spolecnost{
+	padding: 8px; 
+	padding-left: 75px; 
+	color: white; 
+	background-color: #8b8686; 
+	text-decoration: none; 
+	font-weight: bold; 
+	text-transform: uppercase; 
+	font-size: 16px;
+	width: 122px;
+}
+
+#katalog {
+	background-color: #f39200; 
+	padding: 0; margin: 0; 
+	list-style-type: none; 
+	display:block;
+	width:200px;
+}
+
+#katalog, ul {
+	padding:0; 
+	list-style-type:none;
+}
+
+#katalog ul {
+	position:absolute; 
+	top:0; 
+	left:200px; 
+	visibility:hidden; 
+	background-color:white;
+}
+
+#katalog li { 
+	position:relative;
+	width:200px;
+	border-bottom: 1px solid white;
+	border-left: 5px solid #8b8686;
+}
+#katalog a {
+	padding: 8px; 
+	text-align: left; 
+	padding-left: 20px; 
+	color: #fff; 
+	background-color: #f39200; 
+	display: block; 
+	text-decoration: none; 
+	font-weight: bold;  
+	font-size: 14px;
+	/*border-left: 5px solid #f39200;*/
+}
+#katalog a:hover, #katalog li:hover a, #katalog li.hover a { 
+	background-color: #8b8686; 
+	color:white; 
+}
+#katalog li:hover ul a, #katalog li.hover ul a {  /* druhá úroveň rozbalovacího menu*/
+	background-color:#f39200; 
+	color:white; 
+	width: 200px;  
+	padding: 10px; 
+	text-align: left; 
+	padding-left: 15px; 
+	font-family: arial; 
+	font-size: 14px;
+	text-transform: none;
+	} 
+
+#katalog li:hover ul a:hover, #katalog li.hover ul a:hover { 
+	background-color:#8b8686; 
+	color:white; 
+}
+
+#katalog li:hover ul, #katalog li.hover ul { 
+	visibility:visible; 
+}
+#katalog li li { 
+	border:none; 
+	padding:0; 
+	background-color:rgb(233,131,21); 
+}
+
+#katalog ul ul { /* třetí úroveň rozbalovacího menu*/
+	position:absolute; 
+	top:0; 
+	left:178px; 
+	visibility:hidden; 
+	background-color:white;
+}
