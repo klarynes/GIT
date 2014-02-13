@@ -12,7 +12,7 @@
 body {
 	background: url('../images/pozadi.png') no-repeat top center #fff;
 	font-size: 15px;
-	font-family:  tahoma, verdana, arial, helvetica, sans-serif;
+	font-family:  lucida, tahoma, arial, sans-serif;
 	text-align: justify;
 }
 .box {
@@ -39,9 +39,9 @@ body {
 }
 .main-header--logo {
 position: absolute;
-width: 290px;
-height: 100px;
-background: url('../images/logo.png') no-repeat;
+width: 300px;
+height: 115px;
+background: url('../images/logo.png') 10px 15px no-repeat;
 }
 
 
@@ -76,7 +76,7 @@ background: url('../images/logo.png') no-repeat;
 	white-space: nowrap;
 }
 .menu a {
-	padding: 10px; 
+	padding: 11px; 
 	text-align: center; 
 	color: #fff; 
 	background-color: #f39200; 
@@ -116,11 +116,11 @@ background: url('../images/logo.png') no-repeat;
 .main-section {
 	margin: 0 auto;
 	width: 890px;
+	position: relative;
 }
 
 /* Levý sloupec */
 .main-section--levy {
-	position:relative;
 	float:left;
 	padding: 25px 20px 20px 20px;
 }
@@ -129,14 +129,19 @@ background: url('../images/logo.png') no-repeat;
 .main-section--pravy {
 	padding: 20px;
 	margin-left: auto;
-	width: 620px;
+	width: 605px;
 }
 
 
 /* Blok akce*/
+
+.levysloupec{
+	margin-left: 19px;
+}
+
 .blokakce{ 
 	display:block;
-	width:200px;
+	width:205px;
 		
 }
 .bloknadpis{
@@ -188,6 +193,13 @@ background: url('../images/logo.png') no-repeat;
 
 /* Půjčovna */
 
+.tabnadpis{
+	background: #8B8686;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 16px;
+}
+
 .tableft{
 	text-align: left;
 	width:70%;
@@ -195,6 +207,10 @@ background: url('../images/logo.png') no-repeat;
 
 .tabright{
 	text-align: right;	
+}
+
+.tabcenter{
+	text-align: center;	
 }
 
 .tabulka {

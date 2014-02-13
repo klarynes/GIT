@@ -1,4 +1,6 @@
  <section class="main-section--levy">
+
+  <div class="levysloupec">
    <div class="blokakce">
          <div class="bloknadpis">Aktulality</div>
 	          <ul class="bloktext">
@@ -14,4 +16,5 @@
             <li> ke stažení 2 </li>
           </ul>
     </div>
+  </div>
   </section>  

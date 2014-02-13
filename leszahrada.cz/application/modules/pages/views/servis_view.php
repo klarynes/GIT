@@ -21,8 +21,10 @@
 
         <p class="odstavec">A mnohem více.. <br /></p>
         <br />
-        <img  align="right" style="width: 590px; border:solid 1px #f39200" src="assets/images/prodejna.jpg" alt="Prodejna Havlín les&zahrada"><br />
+        <img  align="right" style="width: 590px; border:solid 1px #f39200; margin-bottom:20px;" src="assets/images/prodejna.jpg" alt="Prodejna Havlín les&zahrada"><br />
         </div>
 	</section>
-</div>
+
+ <div class="clr"></div>
+
 </div>
