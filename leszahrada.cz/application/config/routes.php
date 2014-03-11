@@ -38,9 +38,11 @@
 |
 */
 
+$route['sortiment/(:any)'] = 'sortiment/$1';
 $route['(:any)'] = 'pages/page/$1';
 $route['default_controller'] = 'pages/page'; 
 $route['404_override'] = '';
+
 
 
 /* End of file routes.php */

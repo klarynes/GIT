@@ -56,9 +56,9 @@ class Pages extends MX_Controller {
 		
 		} else if($pagename == 'elektrickepily') {
 			$this->load->view('elektrickepily_view', $data);
-		
-		} else if($pagename == 'kontaktni_fomular') {
-			$this->load->view('kontaktni_fomular', $data);
+
+		} else if($pagename == 'viking') {
+			$this->load->view('viking_view', $data);	
 							
 		} else {
 			echo "Stránka nenalezena!"; ///vypíše se pokud nastane chyba v podmínce viz výše

@@ -34,7 +34,6 @@
          
       <div class="vice"><a href="http://www.seznam.cz" rel="bookmark">Více informací</a></div>
     </div>
-      <p> V případě dotazů nás neváhejte kontaktovat.</p>
   </div>
 </section>
 

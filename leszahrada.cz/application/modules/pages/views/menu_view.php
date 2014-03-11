@@ -10,8 +10,8 @@
 	  <li><a href="/sortiment">sortiment</a>
 	  		<ul>
 				<li><a href="/stihl">Stihl</a></li>
-				<li><a href="..//">Stiga</a></li>
-				<li><a href="..//">Viking</a></li>
+				<li><a href="/">Stiga</a></li>
+				<li><a href="/viking">Viking</a></li>
 				<li><a href="..//">Solo</a></li>
 				<li><a href="..//">Solo</a></li>
 				<li><a href="..//">Solo</a></li>

@@ -36,36 +36,75 @@
 
     </br>
     <div>
-      <h3> Napište nám:</h3></br> 
+      <span style="font-size: 18px; font-weight:bold;">Napište nám:</span>
+      <p class="odstavec"></p>
   
+  <a name="kontaktni_formular"></a>
 
-  <form action="kontaktni_formular.php" method="post">
-<div class="kText">Jméno:</div>
-<div class="kInput"><input id="kJmeno" name="jmeno" accesskey="j" type="text" size="30" /></div>
-<br />
-<div class="kText">Email:</div>
-<div class="kInput"><input id="kEmail" name="email" accesskey="e" type="text" size="30" /></div>
-<br />
-<div class="kText">Text:</div><div class="kInput">
-<textarea id="kText" name="text" accesskey="t" rows="10" cols="60"></textarea></div>
-<br />
-<input type="submit" class="kBut" value="Odeslat"/>
-</form>
+<script>
 
-<!--
-      <form method="post" action="kontaktni_formular.php"> 
+function validate_form() {
+  validity = true;
+  if (!check_empty(document.form.jmeno.value))
+        { validity = false; alert('Pole jméno je prázdné!'); }
+  if (!check_email(document.form.email.value))
+        { validity = false; alert('Emailová adresa není zadána ve správném tvaru!'); }
+  if (!check_empty(document.form.predmet.value))
+        { validity = false; alert('Pole předmět je prázdné!'); }
+  if (!check_empty(document.form.zprava.value))
+        { validity = false; alert('Pole Vaše zpáva je prázdné!'); }
+  if (validity)
+        alert ("Needed entries have been verified. "
+                + "Your form is now being passed to your browser's "
+                + "Mail Delivery Sub-System.");
+  return validity;
+}
+
+function check_empty(text) {
+  return (text.length > 0); // returns false if empty
+}
+
+function check_email(address) {
+  if ((address == "")
+    || (address.indexOf ('@') == -1)
+    || (address.indexOf ('.') == -1))
+      return false;
+  return true;
+}
+</script>
+
+</head>
+
+<body>
+<form name="form" method="post" action=""
+ enctype="text/plain" onSubmit="return validate_form()">
+
+Vaše jméno (vyžadováno)</br> 
+  <input class="formular-pole" type="text"  name="jmeno"></br>
+Váš email (vyžadováno)</br>
+  <input class="formular-pole" type="text"  name="email"></br>
+Předmět:</br>
+  <input class="formular-pole" type="text"  name="predmet"></br>
+Vaše zpráva</br>
+  <textarea  class="formular-area" type="text" name="zprava" ></textarea> </br>
+
+  <input class="formular-tlacitko" type="submit" name="odeslat" value="Odeslat zprávu"> 
+</form>  
+
+     <!-- <form method="post" action=""> 
       Vaše jméno (vyžadováno)</br> 
-        <input class="formular-pole" required type="text" name="jmeno" placeholder="Vaše jméno"> </br></br>
+        <input class="formular-pole" required type="text" name="jmeno" > </br></br>
       Váš email (vyžadováno)</br> 
-        <input class="formular-pole" required type="text" name="email" placeholder="Váš email"></br></br>
+        <input class="formular-pole" required type="text" name="email" ></br></br>
       Předmět zprávy </br> 
-        <input class="formular-pole" type="text" name="predmet" placeholder="Předmět zprávy"> </br></br> 
+        <input class="formular-pole" type="text" name="predmet" > </br></br> 
       Vaše zpráva </br> 
-        <textarea  class="formular-area" name="text" placeholder="Vaše zpráva"></textarea> </br></br> 
+        <textarea  class="formular-area" type="text" name="zprava" ></textarea> </br></br> 
       
       <input class="formular-tlacitko" type="submit" name="odeslat" value="Odeslat zprávu"> 
       </form>
-   -->   
+-->
+      
     </div>
 
     </section> 

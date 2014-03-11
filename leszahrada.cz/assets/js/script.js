@@ -25,14 +25,14 @@ function rotate (element) {
 
 
 
- $( "#rotator" ).animate({ "left": "-50px","top": "-50px",'opacity':  0.95 }, 7850,'linear', function(){
-    $(this).animate({"left": "0px","top": "0px",'opacity':  0.95}, 7850);
+ $( "#rotator" ).animate({ "left": "-50px","top": "-50px" }, 8000,'linear', function(){
+    $(this).animate({"left": "0px","top": "0px"}, 8000,'linear');
  });
 
 
 
-$(element).children('img').animate({"width": "450px"}, 7850, function(){
-  $(this).animate({"width": "320px"}, 7850);
+$(element).children('img').animate({"width": "580px"}, 8000, 'linear', function(){
+  $(this).animate({"width": "350px"}, 8000,'linear');
 });
 
 
