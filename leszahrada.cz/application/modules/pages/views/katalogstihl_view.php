@@ -3,17 +3,17 @@
 <ul id="katalog">
     <li><a href="">Motorové pily</a>
       <ul>
-          <li><a href="">Hobby</a></li>
-          <li><a href="">Farmářské</a></li>
-          <li><a href="">Profesionální</a></li>
-          <li><a href="">Záchranářské</a></li>
+          <li><a href="/hobbypily">Hobby</a></li>
+          <li><a href="/farmarskepily">Farmářské</a></li>
+          <li><a href="/profesionalnipily">Profesionální</a></li>
+          <li><a href="/zachranarskepily">Záchranářské</a></li>
       </ul>
     </li>
 
-    <li><a href="">Speciální pily</a></li>
-    <li><a href="">Elektrické pily</a></li> 
+    <li><a href="/specialnipily">Speciální pily</a></li>
+    <li><a href="/elektrickepily">Elektrické pily</a></li> 
   
-    <li><a href="">Křovinořezy</a>
+    <li><a href="/krovinorezy">Křovinořezy</a>
       <ul>
           <li><a href="">Hobby</a></li>
           <li><a href="">Profesionální</a></li>

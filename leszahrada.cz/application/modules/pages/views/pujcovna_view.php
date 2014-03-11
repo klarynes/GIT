@@ -72,7 +72,8 @@
             </tr>
           </tfoot>
         </table> 
-	</section>
+      </br>
+  </section>
 
  <div class="clr"></div>
 

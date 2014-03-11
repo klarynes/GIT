@@ -36,6 +36,30 @@ class Pages extends MX_Controller {
 		} else if($pagename == 'kontakty') { ///pokud změním název kontakty na kravina tak to vypíše string po kliknutí na kontakty v menu. Když v URL změním www.jfdkfj.cz/kontakty na kravina, tak se načtou stránky kontaktů
 			$this->load->view('kontakty_view', $data);
 
+		} else if($pagename == 'stihl') {
+			$this->load->view('stihl_view', $data);
+
+		} else if($pagename == 'hobbypily') {
+			$this->load->view('hobbypily_view', $data);	
+
+		} else if($pagename == 'farmarskepily') {
+			$this->load->view('farmarskepily_view', $data);		
+
+		} else if($pagename == 'profesionalnipily') {
+			$this->load->view('profesionalnipily_view', $data);	
+
+		} else if($pagename == 'zachranarskepily') {
+			$this->load->view('zachranarskepily_view', $data);	
+
+		} else if($pagename == 'specialnipily') {
+			$this->load->view('specialnipily_view', $data);	
+		
+		} else if($pagename == 'elektrickepily') {
+			$this->load->view('elektrickepily_view', $data);
+		
+		} else if($pagename == 'kontaktni_fomular') {
+			$this->load->view('kontaktni_fomular', $data);
+							
 		} else {
 			echo "Stránka nenalezena!"; ///vypíše se pokud nastane chyba v podmínce viz výše
 		}	

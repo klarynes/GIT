@@ -11,16 +11,22 @@
 }
 body {
 	background: url('../images/pozadi.png') no-repeat top center #fff;
-	font-size: 15px;
+	font-size: 14px;
 	font-family:  lucida, tahoma, arial, sans-serif;
 	text-align: justify;
 }
 .box {
 	margin: 0 auto;
 	width: 960px;
-	background: url('../images/pozadi_bile.png') no-repeat;
+	background: url('../images/pozadi_bile.png') repeat;
 }
 
+.obrazek { 
+	  -webkit-box-shadow:1px 1px 5px #000;
+	  -moz-box-shadow:1px 1px 5px #000;
+	  -o-box-shadow:1px 1px 5px #000;
+	  box-shadow:1px 1px 5px #000;
+}
 
 /* Hlavička */
 .main {
@@ -127,9 +133,10 @@ background: url('../images/logo.png') 10px 15px no-repeat;
 
 /* Pravý sloupec */
 .main-section--pravy {
-	padding: 20px;
+	padding-top: 20px;
+	padding-right: 25px;
 	margin-left: auto;
-	width: 605px;
+	width: 590px;
 }
 
 
@@ -176,7 +183,7 @@ background: url('../images/logo.png') 10px 15px no-repeat;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 16px;
 }
 .odstavec{
 	margin-top: 15px;
@@ -194,30 +201,36 @@ background: url('../images/logo.png') 10px 15px no-repeat;
 /* Půjčovna */
 
 .tabnadpis{
-	background: #8B8686;
-	color: #FFF;
+	background: rgba(139, 134, 134, 0.5);
+	color: #000;
+	font-size: 13px;
 	font-weight: bold;
-	font-size: 16px;
 }
 
 .tableft{
 	text-align: left;
-	width:70%;
+	width:25%;
 }
 
 .tabright{
-	text-align: right;	
+	text-align: right;
+	width: 23%;	
 }
 
 .tabcenter{
-	text-align: center;	
+	text-align: center;
+	width: 10%;	
 }
 
 .tabulka {
-	width: 550px;
-	border-right: 1px solid #8b8686;
+	width: 580px;
+	/*border-right: 1px solid #8b8686;*/
 	border-collapse: collapse;
 	margin: 0 auto;
+	-webkit-box-shadow:1px 1px 5px #000;
+	  -moz-box-shadow:1px 1px 5px #000;
+	  -o-box-shadow:1px 1px 5px #000;
+	  box-shadow:1px 1px 5px #000;
 }
 
 .tabulka thead th, .tabulka thead td {
@@ -230,7 +243,7 @@ background: url('../images/logo.png') 10px 15px no-repeat;
 }
 
 .tabulka tbody td {
-	padding: 7px 15px 7px 15px;
+	padding: 3px 10px 3px 10px;
 	border-top: 1px solid #8b8686; 
 	border-bottom: 1px solid #8b8686;
 	border-left: 1px solid #8b8686;
@@ -243,6 +256,10 @@ background: url('../images/logo.png') 10px 15px no-repeat;
 	font-weight: bold;
 	padding: 7px 15px 7px 15px;
 }
+.popis{
+	text-align: center;
+	font-size: 14px;
+}
 
 /* Bazar */
 
@@ -252,12 +269,16 @@ background: url('../images/logo.png') 10px 15px no-repeat;
 }
 
 .polozka {
-	border:solid 2px #8b8686;
+	/*border:solid 2px #8b8686;*/
 	position: relative;
 	width: 260px;
 	height: 360px;
 	float: left;
-	margin: 18px;
+	margin: 15px;
+	-webkit-box-shadow:1px 1px 5px #000;
+	  -moz-box-shadow:1px 1px 5px #000;
+	  -o-box-shadow:1px 1px 5px #000;
+	  box-shadow:0px 0px 5px #000;
 }
 
 .polozka-nazev {
@@ -335,6 +356,14 @@ font-weight:bold;
 }
 
 /* Sortiment */
+.logo-obrazek{
+width: 250px;
+height: 155px;
+}
+
+.logo{
+	margin: 20px -20px 30px 20px;
+}
 .blok_katalog{
 	position: relative;
 	padding: 20px;
@@ -427,4 +456,135 @@ font-weight:bold;
 	left:178px; 
 	visibility:hidden; 
 	background-color:white;
+}
+
+/* Slideshow*/
+
+#container { 
+	position: relative; 
+	top:25px;
+	width:100%;
+	height:100%;
+	margin-bottom: 40px;
+}
+
+#rotator_wrapper {
+	position: relative; 
+	left:0;
+	top:0;
+	width:580px;
+	height:350px;
+	list-style-type: none;
+	z-index: -1;
+	overflow: hidden;
+	border:8px solid #fff;
+	  -webkit-box-shadow:1px 1px 5px #000;
+	  -moz-box-shadow:1px 1px 5px #000;
+	  -o-box-shadow:1px 1px 5px #000;
+	  box-shadow:1px 1px 5px #000;
+}
+
+#rotator{
+	position: relative;
+	width:100%;
+	height:100%;
+	list-style-type: none;
+}
+
+#rotator > li{ 
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#rotator li img { 
+	width:530px;
+}
+
+#rotator a {
+	display: block;
+	width: 30px;
+	height: 20px;
+	background: black;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	float: left;
+	padding: 5px;
+	margin-top:30px;
+}
+
+#rotator_controls {
+	list-style-type: none;	
+}
+
+.produkt{
+	margin: 10px -20px 0px 25px;
+}
+
+.produkt td{
+text-align: left;
+padding: 0px 15px 0px 15px;
+font-size: 14px;
+
+}
+.oranzova{
+	background: rgba(243, 146, 0, 0.7);
+	color:#fff;	
+}
+
+.seda{
+	background: rgba(139, 134, 134, 0.5);
+	color:#000;
+}
+
+/* Produkty STIHL */
+
+.nadpis-tabulka {
+	font-size:14px; 
+	text-align: justify; 
+	text-transform: none; 
+	padding-top: 10px;
+}
+.poznamka{
+	font-size:10px; 
+	text-align: justify; 
+	padding: 10px 15px 10px 15px;
+}
+
+/* Kontaktní formulář */
+
+.formular-pole {
+	width: 320px;
+	height: 25px;
+	border: 1px solid #8b8686;
+	margin: 5px 0 0 0;
+	padding-left: 5px;
+	font-size: 14px;
+	color: #8b8686;
+	outline-color: #f39200;
+}
+
+.formular-tlacitko {
+	width: 150px;
+	height: 35px;
+	border: 0;
+	background: #f39200;
+	color: #fff;
+	font-size: 18px;
+	margin: 5px 0 15px 0;
+	outline-color: #f39200;
+}
+
+.formular-area {
+	width: 580px;
+	height: 150px;
+	border: 1px solid #8b8686;
+	margin: 5px 0 0 0;
+	padding-left: 5px;
+	font-size: 14px;
+	color: #8b8686;
+	outline-color: #f39200;
 }

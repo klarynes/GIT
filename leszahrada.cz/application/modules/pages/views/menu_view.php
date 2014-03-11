@@ -9,7 +9,7 @@
 	  <li><a href="/o_nas">o nás</a></li>
 	  <li><a href="/sortiment">sortiment</a>
 	  		<ul>
-				<li><a href="..//">Stihl</a></li>
+				<li><a href="/stihl">Stihl</a></li>
 				<li><a href="..//">Stiga</a></li>
 				<li><a href="..//">Viking</a></li>
 				<li><a href="..//">Solo</a></li>
