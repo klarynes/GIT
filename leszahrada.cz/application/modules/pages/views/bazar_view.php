@@ -34,6 +34,33 @@
          
       <div class="vice"><a href="http://www.seznam.cz" rel="bookmark">Více informací</a></div>
     </div>
+
+     <div class="polozka"> 
+          <article class="polozka-nazev">Název položky </article>
+           <div style="padding: 0px 0px 0px 24px;"> <img class="polozka-obrazek" src="assets/images/stihl.jpg" alt="Motorová pila STIHL"></div>
+          
+              <ul class="polozka-popis">
+                <li>info o stroji</li>
+                <li>info o stroji</li>
+                <li>info o stroji</li>
+                <li>info o stroji</li>
+              </ul>
+            <div class="vice"><a href="http://www.seznam.cz" rel="bookmark">Více informací</a></div>
+        </div>
+
+         <div class="polozka"> 
+          <article class="polozka-nazev">Název položky </article>
+           <div style="padding: 0px 0px 0px 24px;"> <img class="polozka-obrazek" src="assets/images/stihl.jpg" alt="Motorová pila STIHL"></div>
+          
+              <ul class="polozka-popis">
+                <li>info o stroji</li>
+                <li>info o stroji</li>
+                <li>info o stroji</li>
+                <li>info o stroji</li>
+              </ul>
+            <div class="vice"><a href="http://www.seznam.cz" rel="bookmark">Více informací</a></div>
+        </div>
+        
   </div>
 </section>
 

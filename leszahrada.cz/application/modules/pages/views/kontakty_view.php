@@ -12,7 +12,7 @@
       <table>
         <tr>
           <td> 
-              <p style="text-align:center; padding: 0px 7px 0px 0px;">
+              <p style="text-align:center; padding: 0px 30px 0px 0px;">
                 <span style="font-size: 18px; font-weight:bold;">Havlín les&zahrada</span><br />
                 Zraslavice 77 (náměstí)<br />
                 285 21, Zbraslavice<br />

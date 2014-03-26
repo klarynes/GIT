@@ -1,6 +1,6 @@
 <div class="main">
 	<header class="main-header">
-		<a class="main-header--logo" href="http://www.leszahrada.cz"></a>
+		<!--<a class="main-header--logo" href="http://www.leszahrada.cz"></a>-->
 		<a class="main-header--obr" href="http://www.leszahrada.cz/"></a>	
 	</header>
 
