@@ -41,72 +41,43 @@
   
   <a name="kontaktni_formular"></a>
 
-<script>
+<?php
+              $action=$_REQUEST['action'];
+              if ($action=="")    /* zobrazí kontaktní formulář */
+                  {
+                  ?>
+                    <form  action="" method="POST" enctype="multipart/form-data"> 
+                    <input type="hidden" name="action" value="submit"> 
+                    Vaše jméno (vyžadováno)</br> 
+                    <input class="formular-pole" name="name" type="text" value="" /><br> 
+                    Váš email (vyžadováno) </br> 
+                    <input class="formular-pole" name="email" type="text" value="" /><br> 
+                    Vaše zpráva</br> 
+                    <textarea class="formular-area" name="message" rows="7" cols="30"></textarea><br> 
+                    <input class="formular-tlacitko" type="submit" name="odeslat" value="Odeslat zprávu"/> 
+                    </form> 
+                    <?php 
+                    }  
+              else                /* odešle vyplněná data */
+                  {
+                  $name=$_REQUEST['name'];
+                  $email=$_REQUEST['email'];
+                  $message=$_REQUEST['message'];
+                  if (($name=="")||($email=="")||($message==""))
+                      {
+                      echo "Všechna pole jsou povinná, prosím vyplňte <a href=\"\">formulář</a> znovu."; 
+                      }
+                  else{        
+                      $from="From: $name<$email>\r\nReturn-path: $email";
+                      $subject="Tato zpráva je poslána z kontaktního formuláře na leszahrada.cz";
+                      mail("klara.nahlovska@gmail.com", $subject, $message, $from); 
+                      echo "Vaše zpráva byla úspěšně odeslána!"; 
+                      }
+                  }  
+              ?>
 
-function validate_form() {
-  validity = true;
-  if (!check_empty(document.form.jmeno.value))
-        { validity = false; alert('Pole jméno je prázdné!'); }
-  if (!check_email(document.form.email.value))
-        { validity = false; alert('Emailová adresa není zadána ve správném tvaru!'); }
-  if (!check_empty(document.form.predmet.value))
-        { validity = false; alert('Pole předmět je prázdné!'); }
-  if (!check_empty(document.form.zprava.value))
-        { validity = false; alert('Pole Vaše zpáva je prázdné!'); }
-  if (validity)
-        alert ("Needed entries have been verified. "
-                + "Your form is now being passed to your browser's "
-                + "Mail Delivery Sub-System.");
-  return validity;
-}
-
-function check_empty(text) {
-  return (text.length > 0); // returns false if empty
-}
-
-function check_email(address) {
-  if ((address == "")
-    || (address.indexOf ('@') == -1)
-    || (address.indexOf ('.') == -1))
-      return false;
-  return true;
-}
-</script>
-
-</head>
-
-<body>
-<form name="form" method="post" action=""
- enctype="text/plain" onSubmit="return validate_form()">
-
-Vaše jméno (vyžadováno)</br> 
-  <input class="formular-pole" type="text"  name="jmeno"></br>
-Váš email (vyžadováno)</br>
-  <input class="formular-pole" type="text"  name="email"></br>
-Předmět:</br>
-  <input class="formular-pole" type="text"  name="predmet"></br>
-Vaše zpráva</br>
-  <textarea  class="formular-area" type="text" name="zprava" ></textarea> </br>
-
-  <input class="formular-tlacitko" type="submit" name="odeslat" value="Odeslat zprávu"> 
-</form>  
-
-     <!-- <form method="post" action=""> 
-      Vaše jméno (vyžadováno)</br> 
-        <input class="formular-pole" required type="text" name="jmeno" > </br></br>
-      Váš email (vyžadováno)</br> 
-        <input class="formular-pole" required type="text" name="email" ></br></br>
-      Předmět zprávy </br> 
-        <input class="formular-pole" type="text" name="predmet" > </br></br> 
-      Vaše zpráva </br> 
-        <textarea  class="formular-area" type="text" name="zprava" ></textarea> </br></br> 
-      
-      <input class="formular-tlacitko" type="submit" name="odeslat" value="Odeslat zprávu"> 
-      </form>
--->
       
     </div>
-
     </section> 
 
   <div class="clr"></div>

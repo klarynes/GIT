@@ -12,7 +12,7 @@
 body {
 	background: linear-gradient(#F0F0F0, #C2C2C2);
 	/* background: url('../images/pozadi.png') no-repeat top center #fff; */
-	font-size: 14px;
+	font-size: 13px;
 	font-family:  lucida, tahoma, arial, sans-serif;
 	text-align: justify;
 }
@@ -259,7 +259,7 @@ background: url('../images/logo.png') 10px 15px no-repeat;
 	font-weight: bold;
 	padding: 7px 15px 7px 15px;
 	text-transform: uppercase;
-	border-radius: 3px 3px 0px 0px;
+	/*border-radius: 3px 3px 0px 0px;*/
 }
 
 .tabulka tbody td {
@@ -592,6 +592,7 @@ font-size: 12px;
 	font-size: 14px;
 	color: #575757;
 	outline-color: #FA6C0D;
+	margin-bottom: 15px;
 }
 
 .formular-tlacitko {
@@ -601,7 +602,7 @@ font-size: 12px;
 	background: #FA6C0D;
 	color: #fff;
 	font-size: 18px;
-	margin: 5px 0 15px 0;
+	margin: 15px 0 25px 0;
 	outline-color: #FA6C0D;
 	border-radius: 3px;
 }
