@@ -42,8 +42,12 @@
   <a name="kontaktni_formular"></a>
 
 <?php
-              $action=$_REQUEST['action'];
-              if ($action=="")    /* zobrazí kontaktní formulář */
+              if(!empty($_REQUEST['action'])){
+                $action = $_REQUEST['action'];
+              }
+                 
+             
+              if (empty($action))    /* zobrazí kontaktní formulář */
                   {
                   ?>
                     <form  action="" method="POST" enctype="multipart/form-data"> 
@@ -52,6 +56,8 @@
                     <input class="formular-pole" name="name" type="text" value="" /><br> 
                     Váš email (vyžadováno) </br> 
                     <input class="formular-pole" name="email" type="text" value="" /><br> 
+                     Předmět </br> 
+                    <input class="formular-pole" name="subject" type="text" value="" /><br>
                     Vaše zpráva</br> 
                     <textarea class="formular-area" name="message" rows="7" cols="30"></textarea><br> 
                     <input class="formular-tlacitko" type="submit" name="odeslat" value="Odeslat zprávu"/> 
@@ -63,18 +69,19 @@
                   $name=$_REQUEST['name'];
                   $email=$_REQUEST['email'];
                   $message=$_REQUEST['message'];
+                  $subject=$_REQUEST['subject'];
                   if (($name=="")||($email=="")||($message==""))
                       {
                       echo "Všechna pole jsou povinná, prosím vyplňte <a href=\"\">formulář</a> znovu."; 
                       }
                   else{        
-                      $from="From: $name<$email>\r\nReturn-path: $email";
-                      $subject="Tato zpráva je poslána z kontaktního formuláře na leszahrada.cz";
+                      $from="From:".$name."<".$email.">\r\nReturn-path: ".$email;
+                      //subject="Tato zpráva je poslána z kontaktního formuláře na leszahrada.cz";
                       mail("klara.nahlovska@gmail.com", $subject, $message, $from); 
                       echo "Vaše zpráva byla úspěšně odeslána!"; 
                       }
                   }  
-              ?>
+     ?>
 
       
     </div>
